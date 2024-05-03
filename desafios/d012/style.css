@@ -1,0 +1,30 @@
+@charset "UTF-8";
+
+
+*{
+    margin: 0px;
+    padding: 0px;
+}
+
+header{
+    background-color: black;
+    height: 100px;
+}
+
+header > h1{
+    text-align: center;
+    color: white;
+    padding-top: 20px;
+}
+
+header > nav{
+    text-align: center;
+    color: white;
+    padding-top: 10px;
+}
+
+article p{
+    width: 200px;
+    padding: 10px;
+    
+}
