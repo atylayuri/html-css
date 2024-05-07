@@ -17,24 +17,77 @@
         td, th{
             border: 1px solid black;
             padding: 10px;
-            
         }
 
+        .cor{
+            background-color: gray;
+            color: white;
+        }
+
+        #left{
+            text-align: left;
+        }
+
+        
     </style>
 </head>
 <body>
     <table>
         <thead>
             <tr>
-                <th rowspan="2">Área</th>
-                <th rowspan="2">Diciplinas</th>
-                <th colspan="2">Notas</th>
-                <th rowspan="2">Média</th>
+                <th rowspan="2" class="cor" scope="col">Área</th>
+                <th rowspan="2" class="cor" scope="col">Diciplinas</th>
+                <th colspan="2" class="cor" scope="col">Notas</th>
+                <th rowspan="2" class="cor" scope="col">Média</th>
             </tr>
         <tr>
-                    <th>Nota 1</th>
-                    <th>Nota 2</th>
+                    <th class="cor">Nota 1</th>
+                    <th class="cor">Nota 2</th>
         </tr>
+        <tr>
+            <th rowspan="4" scope="rowgroup">Exatas</th>
+            <td scope="row">Matemática</td>
+            <td scope="row">0.0</td>
+            <td scope="row">0.0</td>
+            <td scope="row">0.0</td>
+        </tr>
+        <tr>
+            <td scope="row">Física</td>
+            <td scope="row">0.0</td>
+            <td scope="row">0.0</td>
+            <td scope="row">0.0</td>
+        </tr>
+        <tr>
+            <td scope="row">Química</td>
+            <td scope="row">0.0</td>
+            <td scope="row">0.0</td>
+            <td scope="row">0.0</td>
+        </tr>
+        <tr>
+            <td scope="row">Biologia</td>
+            <td scope="row">0.0</td>
+            <td scope="row">0.0</td>
+            <td scope="row">0.0</td>
+        </tr>
+        <tr>
+            <th colspan="4" class="cor" id="left" scope="rowgroup">Média de Exatas</th>
+            <td class="cor">0.0</td>
+        </tr>
+        <tr>
+            <th rowspan="2">Humanas</th>
+            <td scope="row">História</td>
+            <td scope="row">0.0</td>
+            <td scope="row">0.0</td>
+            <td scope="row">0.0</td>
+        </tr>
+        <tr>
+            <td>Geografia</td>
+            <td scope="row">0.0</td>
+            <td scope="row">0.0</td>
+            <td scope="row">0.0</td>
+        </tr>
+        <th colspan="4" class="cor" id="left">Média de Humanas</th>
+            <td class="cor">0.0</td>
         </thead>
     </table>
 </body>
