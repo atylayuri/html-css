@@ -4,6 +4,22 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Iframes</title>
+    <style>
+        body{
+            font-family: Arial, Helvetica, sans-serif;
+            background-color: black;
+            color: white;
+        }
+
+        iframe{
+           
+        }
+
+        #doc{
+            width: 600px;
+            height: 600px;
+        }
+    </style>
 </head>
 <body>
     <h1>Conteúdos dentro do iframe</h1>
@@ -19,6 +35,6 @@
 <iframe src="https://embed.waze.com/iframe?zoom=16&lat=-22.902449&lon=-43.174591&ct=livemap" width="600" height="450" allowfullscreen></iframe>
 
 <h2>Google documentes</h2>
-<iframe src="https://docs.google.com/document/d/e/2PACX-1vQmSPRJXsDpLEpZkwAHGk9jE1yk1J7RuGRhfj-GyXb3L0ZHEZoNGcPgIa1T6tJlQDjdsGdrI7b3g8L8/pub?embedded=true"></iframe>
+<iframe id="doc" src="https://docs.google.com/document/d/e/2PACX-1vQmSPRJXsDpLEpZkwAHGk9jE1yk1J7RuGRhfj-GyXb3L0ZHEZoNGcPgIa1T6tJlQDjdsGdrI7b3g8L8/pub?embedded=true"></iframe>
 </body>
 </html>
