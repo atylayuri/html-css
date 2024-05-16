@@ -4,24 +4,27 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Media Query</title>
+    <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" rel="stylesheet" />
     <link rel="stylesheet" href="estilos/style.css">
 </head>
 <body>
     <header>
         <h1>Meu site</h1>
-        <menu>
+        <span id="burguer" class="material-symbols-outlined" onclick="clickMenu()">
+            menu
+            </span>
+        <menu id="itens">
             <ul>
                 <li><a href="#">Opção 1</a></li>
                 <li><a href="#">Opção 2</a></li>
                 <li><a href="#">Opção 3</a></li>
-                <li><a href="#">Opção 4</a></li>
-                <li><a href="#">Opção 5</a></li>
+                <li><a href="#">Opção 4</a></li> ''
             </ul>
         </menu>
     </header>
     <main>
         <article>
-            <h2>Testando Media Queries</h2>
+            <h2>Redação Enem de 2023</h2>
             <p>
                 A Costituição Federal de 1988-documento júridico mais importante do país-prevê em seu artigo 5º, o direito à igualdade como inerente a todo cidadão brasileiro. No entanto, percebe-se o aumento da desvalorização do trabalho de cuidado realizado pela mulher no cenário nacional, gerando o desaproveitamento da importância da realização desse serviço realizado no meio social na atual realidade brasileira. Desse modo, torna-se evidente a negligência governamental em conjuto com a desigualdade socio-econômica, formentando o agravamento da problemática em questão.
             </p>
@@ -29,9 +32,21 @@
                 Em primeira instância, há de constatar a débil ação do Poder Público em quanto mantedora da invisibilidade do trabalho de cuidados gerais. Acerca disso, o filósofo inglês Thomas Hobbes em seu livro "Leviatã", defende a incubência do Estado em proporcionar meios que auxiliem o progresso da coletividade. Nesse Sentido, as autoridades, contudo, vão de encontro com a ideia de Hobbes, uma vez que possuem um papel inerte em relação à visibilidade das atividades exercidas pelas mulheres no setor doméstico. Logo, é notorio que a omissão do Estado perpetua a carência de uma remuneração apropriada decorrente aos serviçoes prestados aos contratantes no Brazil.
             </p>
             <p>
-                
+                Outrossim, engreda-se a desigualdade socio-econômica na estruturação das tarefas de cuidado de pessoas relizado pela mulher. Posto isto, de acordo com o Istituto Brasileiro de Geografia e Estatística, a figura femenina trabalha aproximadamente o dobro do que os homens em horas semanais. Diante de tal exposto, segundo Ariano Suassuna, existe um injustiça secular capaz de dividir o país em dois: os dos desfavorecidos e os dos favorecidos. Sob esse viés, a mulher acaba se encaixando na categoria dos desfavorecidos devido a consolidação de esteriótipos que se enraizaram ao longo do tempo na população, afetando drasticamente a sua maneira de viver e socializar, se relacionado com a ideia de Ariano. Portando, é inadimissível que esse cenário continue a perdurar na sociedade verde-amarela em que vivemos.
+            </p>
+            <p>
+                Depreende-se, por conseguinte que é mister a atuação governamental no  combate a invisibilidade da mulher nos diversos trabalhos de cuidado rotineiros. Assim, cabe ao Poder Executivo Federal, maior instância de poder, mais especificamente ao Ministério da Justiça, promover a fiscalização adequada dos direitos constitucionais da mulher. Tal ação deve ocorrer por meio da criação de projetos públicos que visam incidir no cumprimento dessas garantias. Além disso, o Ministério da Mulher, deve ampliar o poder de voz da figura femenina no âmbito social, se articulado por meio da criação de palestras públicas destinadas a minimizar o preconceito sobre as mulheres, assegurando-as os direitos propostos, a fim de ampliar a vizão e o valor das mesmas na sociedade. Em síntese, os indivíduos poderãm usufruir dos direitos da Constituição de 1988.
             </p>
         </article>
     </main>
+    <script>
+        function clickMenu() {
+            if (itens.style.display == 'block') {
+                itens.style.display = 'none'
+            } else {
+                itens.style.display = 'block'
+            }
+        }
+    </script>
 </body>
 </html>

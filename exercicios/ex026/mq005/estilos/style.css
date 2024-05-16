@@ -9,7 +9,7 @@
 }
 
 body{
-    background-color: lightblue;
+    background-color: var(--cor01)
 }
 
 * {
@@ -20,16 +20,32 @@ body{
 }
 
 header {
-    background-color: lightgray;
+    background-color: var(--cor04)
 }
 
 header > h1 {
     text-align: center;
     padding: 10px;
+    color: white;
+}
+
+#burguer {
+    background-color: #171f20;
+    display: block;
+    text-align: center;
+    padding: 10px;
+    color: white;
+    cursor: pointer;
+}
+
+#burguer:hover {
+    background-color: #67e5f0d2;
+    color: black;
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.329);
 }
 
 menu {
-    display: block;
+    display: none;
 }
 
 menu > ul {
@@ -37,17 +53,18 @@ menu > ul {
 }
 
 menu > ul > li > a {
-    background-color: rgb(121, 120, 120);
+    background-color: var(--cor0);
     padding: 10px; 
     text-align: center;
     display: block;
     color: white;
     text-decoration: none;
-    border-top: 2px solid rgb(172, 172, 172);
+    border-top: 2px solid var(--cor02);
 }
 
 menu a:hover {
-    background-color: rgb(177, 176, 176);
+    background-color: var(--cor02);
+    font-weight: bold;
 }
 
 main {
@@ -61,6 +78,7 @@ main {
 
 article > h2 {
     padding-bottom: 20px;
+    text-align: center;
 }
 
 article > p {
