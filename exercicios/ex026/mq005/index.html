@@ -6,8 +6,9 @@
     <title>Media Query</title>
     <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" rel="stylesheet" />
     <link rel="stylesheet" href="estilos/style.css">
+    <link rel="stylesheet" href="estilos/media-query.css">
 </head>
-<body>
+<body onresize="mudouTamanho()">
     <header>
         <h1>Redação Enem de 2023</h1>
         <span id="burguer" class="material-symbols-outlined" onclick="clickMenu()">
@@ -18,7 +19,7 @@
                 <li><a href="#">Opção 1</a></li>
                 <li><a href="#">Opção 2</a></li>
                 <li><a href="#">Opção 3</a></li>
-                <li><a href="#">Opção 4</a></li> ''
+                <li><a href="#">Opção 4</a></li>
             </ul>
         </menu>
     </header>
@@ -40,6 +41,15 @@
         </article>
     </main>
     <script>
+
+        function mudouTamanho() {
+            if (window.innerWidth >= 768) {
+                itens.style.display = 'block'
+            } else {
+                itens.style.display = 'none'
+            }
+        }
+
         function clickMenu() {
             if (itens.style.display == 'block') {
                 itens.style.display = 'none'
